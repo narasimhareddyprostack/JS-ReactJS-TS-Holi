@@ -1,11 +1,12 @@
-import Message from "./StateEx/Message";
-import Counter from "./stateEx/Counter";
+import './assets/styles/airtel.css'
+import Navbar from './Navbar/Navbar';
+import Employee from './Employee/Employee';
 let App = ()=>{
     
     return <div>
-                <h2>App Component</h2>
-                <hr/>
-               <Counter />
+            
+            { /*  <Navbar/> */}
+            <Employee />
             </div>
 }
 export default App;
