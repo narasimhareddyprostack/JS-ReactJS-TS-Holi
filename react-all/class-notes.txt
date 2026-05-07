@@ -1,0 +1,13 @@
+Usage: fetch all products
+Rest API URL:https://dummyjson.com/products
+Method Type:GET
+Required Fields: None
+Access Type:  Public 
+
+Invoke Rest API and display product data in the form of table.
+Product Id, Name, Price, Rating, Category.
+
+Step 1: Test your Rest API using Postman tools
+        and analyze the response 
+Step 2: Create React Functional component named as Products.jsx
+        use - useState(),useEffect(),and axios
