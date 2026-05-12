@@ -1,10 +1,13 @@
 let ContactList = (props)=>{
-
+    let SelContactHandler=(user)=>{
+        //console.log(user.name.first)
+        props.getSelContact(user);
+    }
     return <div>
                 <h2>ContactList Comp</h2>
                 <pre>{JSON.stringify(props)}</pre>
-                <table border={2}>
-                    <thead>
+                <table className="table">
+                    <thead className="bg-dark">
                     <tr>
                         <th>User Id</th>
                         <th>Name</th>
@@ -15,7 +18,7 @@ let ContactList = (props)=>{
                     <tbody>
                     {
                         props.users.map((user,index)=>{
-                            return <tr key={index}>
+                            return <tr key={index} onMouseOver={SelContactHandler.bind(null,user)}>
                                         <td>{user.login.uuid.substring(32)}</td>
                                         <td>{user.name.first}</td>
                                         <td>{user.location.city}</td>
